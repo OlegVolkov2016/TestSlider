@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root prefHeight="400.0" prefWidth="400.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RootLayoutController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="14.0" text="Checkboxes" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="34.0" layoutY="34.0" prefHeight="160.0" prefWidth="352.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="34.0" />
+            <CheckBox fx:id="checkBox12" layoutX="48.0" layoutY="46.0" mnemonicParsing="false" onAction="#onCheckBoxes" text="12" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="46.0" />
+            <CheckBox fx:id="checkBox42" layoutX="48.0" layoutY="76.0" mnemonicParsing="false" onAction="#onCheckBoxes" text="42" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="76.0" />
+            <CheckBox fx:id="checkBox201" layoutX="48.0" layoutY="106.0" mnemonicParsing="false" onAction="#onCheckBoxes" text="201" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="106.0" />
+            <Label layoutX="48.0" layoutY="136.0" text="Sum:" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="136.0" />
+            <TextField fx:id="textSum" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="48.0" layoutY="156.0" prefWidth="80.0" style="-fx-control-inner-background: whitesmoke;" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="156.0" />
+            <Label layoutX="34.0" layoutY="200.0" text="TreeView" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="200.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TreeView fx:id="treeView" layoutX="34.0" layoutY="224.0" prefHeight="165.0" prefWidth="352.0" styleClass="treeview" stylesheets="@../application.css" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="224.0" />
+            <Button fx:id="buttonSlider" layoutX="2.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonSliderClick" text="&lt;" />
+         </children>
+      </AnchorPane>
+   </center>
+</fx:root>
